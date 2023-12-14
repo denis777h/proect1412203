@@ -1,0 +1,12 @@
+<h1>Новые</h1>
+<h2>Новости на сегодня</h2>
+<p> </p>
+<ul>{% for news in default %}
+    <li class="news">{{ news.title }}</li>
+    {% endfor %}
+</ul>
+
+
+<h3>{{ news.title }}</h3>
+<p>{{ news.text }}</p>
+<p>Дата загрузки:15.12.2023{{ news.upload_date|date:"" }}</p>
